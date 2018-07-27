@@ -1,0 +1,42 @@
+E:\2. Projects\Auto\Auto\bin\x64\Debug\Auto.exe.config
+E:\2. Projects\Auto\Auto\bin\x64\Debug\Auto.exe
+E:\2. Projects\Auto\Auto\bin\x64\Debug\Auto.pdb
+E:\2. Projects\Auto\Auto\bin\x64\Debug\Emgu.CV.dll
+E:\2. Projects\Auto\Auto\bin\x64\Debug\Emgu.CV.OCR.dll
+E:\2. Projects\Auto\Auto\bin\x64\Debug\Emgu.Util.dll
+E:\2. Projects\Auto\Auto\bin\x64\Debug\Emgu.CV.xml
+E:\2. Projects\Auto\Auto\bin\x64\Debug\Emgu.CV.OCR.xml
+E:\2. Projects\Auto\Auto\bin\x64\Debug\Emgu.Util.xml
+E:\2. Projects\Auto\Auto\obj\x64\Debug\Auto.Auto.resources
+E:\2. Projects\Auto\Auto\obj\x64\Debug\Auto.Properties.Resources.resources
+E:\2. Projects\Auto\Auto\obj\x64\Debug\Auto.csproj.GenerateResource.Cache
+E:\2. Projects\Auto\Auto\obj\x64\Debug\Auto.exe
+E:\2. Projects\Auto\Auto\obj\x64\Debug\Auto.pdb
+E:\2. Projects\Auto\Auto\obj\x64\Debug\Auto.csprojResolveAssemblyReference.cache
+E:\Others\Auto\Auto\bin\x64\Debug\Auto.exe.config
+E:\Others\Auto\Auto\obj\x64\Debug\Auto.exe
+E:\Others\Auto\Auto\obj\x64\Debug\Auto.pdb
+E:\Others\Auto\Auto\bin\x64\Debug\Auto.exe
+E:\Others\Auto\Auto\bin\x64\Debug\Auto.pdb
+E:\Others\Auto\Auto\bin\x64\Debug\Emgu.CV.xml
+E:\Others\Auto\Auto\bin\x64\Debug\Emgu.CV.OCR.xml
+E:\Others\Auto\Auto\bin\x64\Debug\Emgu.Util.xml
+E:\Others\Auto\Auto\obj\x64\Debug\Auto.csprojResolveAssemblyReference.cache
+E:\Others\Auto\Auto\obj\x64\Debug\Auto.Auto.resources
+E:\Others\Auto\Auto\obj\x64\Debug\Auto.Properties.Resources.resources
+E:\Others\Auto\Auto\obj\x64\Debug\Auto.csproj.GenerateResource.Cache
+E:\2.Projects\Auto\Auto\bin\x64\Debug\Auto.exe.config
+E:\2.Projects\Auto\Auto\obj\x64\Debug\Auto.exe
+E:\2.Projects\Auto\Auto\obj\x64\Debug\Auto.pdb
+E:\2.Projects\Auto\Auto\bin\x64\Debug\Auto.exe
+E:\2.Projects\Auto\Auto\bin\x64\Debug\Auto.pdb
+E:\2.Projects\Auto\Auto\bin\x64\Debug\Emgu.CV.dll
+E:\2.Projects\Auto\Auto\bin\x64\Debug\Emgu.CV.OCR.dll
+E:\2.Projects\Auto\Auto\bin\x64\Debug\Emgu.Util.dll
+E:\2.Projects\Auto\Auto\bin\x64\Debug\Emgu.CV.xml
+E:\2.Projects\Auto\Auto\bin\x64\Debug\Emgu.CV.OCR.xml
+E:\2.Projects\Auto\Auto\bin\x64\Debug\Emgu.Util.xml
+E:\2.Projects\Auto\Auto\obj\x64\Debug\Auto.csprojResolveAssemblyReference.cache
+E:\2.Projects\Auto\Auto\obj\x64\Debug\Auto.Auto.resources
+E:\2.Projects\Auto\Auto\obj\x64\Debug\Auto.Properties.Resources.resources
+E:\2.Projects\Auto\Auto\obj\x64\Debug\Auto.csproj.GenerateResource.Cache

@@ -1,0 +1,29 @@
+E:\2. Projects\Auto\Auto\bin\x64\Release\Auto.exe.config
+E:\2. Projects\Auto\Auto\bin\x64\Release\Auto.exe
+E:\2. Projects\Auto\Auto\bin\x64\Release\Auto.pdb
+E:\2. Projects\Auto\Auto\bin\x64\Release\Emgu.CV.dll
+E:\2. Projects\Auto\Auto\bin\x64\Release\Emgu.CV.OCR.dll
+E:\2. Projects\Auto\Auto\bin\x64\Release\Emgu.Util.dll
+E:\2. Projects\Auto\Auto\bin\x64\Release\Emgu.CV.xml
+E:\2. Projects\Auto\Auto\bin\x64\Release\Emgu.CV.OCR.xml
+E:\2. Projects\Auto\Auto\bin\x64\Release\Emgu.Util.xml
+E:\2. Projects\Auto\Auto\obj\x64\Release\Auto.Auto.resources
+E:\2. Projects\Auto\Auto\obj\x64\Release\Auto.Properties.Resources.resources
+E:\2. Projects\Auto\Auto\obj\x64\Release\Auto.csproj.GenerateResource.Cache
+E:\2. Projects\Auto\Auto\obj\x64\Release\Auto.exe
+E:\2. Projects\Auto\Auto\obj\x64\Release\Auto.pdb
+E:\2.Projects\Auto\Auto\bin\x64\Release\Auto.exe.config
+E:\2.Projects\Auto\Auto\obj\x64\Release\Auto.exe
+E:\2.Projects\Auto\Auto\obj\x64\Release\Auto.pdb
+E:\2.Projects\Auto\Auto\bin\x64\Release\Auto.exe
+E:\2.Projects\Auto\Auto\bin\x64\Release\Auto.pdb
+E:\2.Projects\Auto\Auto\bin\x64\Release\Emgu.CV.dll
+E:\2.Projects\Auto\Auto\bin\x64\Release\Emgu.CV.OCR.dll
+E:\2.Projects\Auto\Auto\bin\x64\Release\Emgu.Util.dll
+E:\2.Projects\Auto\Auto\bin\x64\Release\Emgu.CV.xml
+E:\2.Projects\Auto\Auto\bin\x64\Release\Emgu.CV.OCR.xml
+E:\2.Projects\Auto\Auto\bin\x64\Release\Emgu.Util.xml
+E:\2.Projects\Auto\Auto\obj\x64\Release\Auto.csprojResolveAssemblyReference.cache
+E:\2.Projects\Auto\Auto\obj\x64\Release\Auto.Auto.resources
+E:\2.Projects\Auto\Auto\obj\x64\Release\Auto.Properties.Resources.resources
+E:\2.Projects\Auto\Auto\obj\x64\Release\Auto.csproj.GenerateResource.Cache
