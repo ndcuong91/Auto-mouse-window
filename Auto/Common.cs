@@ -190,6 +190,7 @@ namespace Auto
 
         public void SendMessage(string message)
         {
+            return;
             for (int i = 0; i < 5; i++)
                 WinAPI.LeftClick(Messenger, 100);
 

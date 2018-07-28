@@ -18,6 +18,7 @@ namespace Auto
         //Opening
         private Point GatePos, StartButton, SkipButton, Speed, AutoButton, ComeBackButton, InitialStartButton;
         private Rectangle ClickRect, AutoRect, StopRect, ContinueRect;
+        bool bCheckAuto;
 
         ProcessImage pi;
         Common com;
@@ -27,6 +28,7 @@ namespace Auto
             pi = new ProcessImage(mainForm);
             AppLocation = appLocation;
             //Opening
+            bCheckAuto = true;
             GatePos = new Point(740 + AppLocation.X, 541 + AppLocation.Y);
             StartButton = new Point(1290 + AppLocation.X, 764 + AppLocation.Y);
             SkipButton = new Point(1278 + AppLocation.X, 752 + AppLocation.Y);
@@ -36,9 +38,9 @@ namespace Auto
             InitialStartButton = new Point(700 + AppLocation.X, 750 + AppLocation.Y);
 
             ClickRect = new Rectangle(472 + AppLocation.X, 732 + AppLocation.Y, 90, 49);
-            AutoRect = new Rectangle(1265 - 5 + AppLocation.X, 92 - 5 + AppLocation.Y, 10, 10);
-            StopRect = new Rectangle(1265 - 5 + AppLocation.X, 92 - 5 + AppLocation.Y, 10, 10);
-            ContinueRect = new Rectangle(1265 - 5 + AppLocation.X, 92 - 5 + AppLocation.Y, 10, 10);
+            AutoRect = new Rectangle(1260 + AppLocation.X, 87 + AppLocation.Y, 10, 10);
+            StopRect = new Rectangle(405 + AppLocation.X, 891 + AppLocation.Y, 56, 23);
+            ContinueRect = new Rectangle(405 + AppLocation.X, 891 + AppLocation.Y, 76, 23);
 
             com = new Common(appLocation, mainForm);
             main = mainForm;
@@ -56,12 +58,9 @@ namespace Auto
                 main.Log("AutoOrange. Loop number: " + i.ToString());
                 if (main.IsStopped) break;
                 CheckFlagToStop();
-                if (i == 0)
-                    Opening(true);
-                else
-                    Opening(false);
-                Closing(5000);
-                if (i % 5 == 4)
+                Opening();
+                Closing(4000);
+                if (i % 5 == 0)
                 {
                     main.Log("AutoOrange. Saved in loop: " + i.ToString());
                     com.SwitchTab();  //Save orange for every 5 times
@@ -78,7 +77,7 @@ namespace Auto
         }
 
         #region Sequence
-        private void Opening(bool isFirsTime)
+        private void Opening()
         {
             if (main.IsStopped) return;
             main.Log("Opening. Begin");
@@ -88,8 +87,11 @@ namespace Auto
                     WinAPI.LeftClick(GatePos, 400);
                 WinAPI.LeftClick(StartButton, 3000);
                 WinAPI.LeftClick(SkipButton, 5000);
-                if (isFirsTime)
+                if (bCheckAuto)
+                {
                     CheckAuto();
+                    bCheckAuto = false;
+                }
                 WinAPI.LeftClick(Speed, 110000);
 
                 for (int i = 0; i < 40; i++)
@@ -133,8 +135,12 @@ namespace Auto
                 Bitmap autoImage = WinAPI.GetRectImage(AutoRect, false);
                 Color center = autoImage.GetPixel(5, 5);
 
+                main.Log("CheckAuto. center.B: " + center.B.ToString());
                 if (center.B > 150)
+                {
+                    main.Log("CheckAuto. Click Auto");
                     WinAPI.LeftClick(AutoButton, 1000);
+                }
             }
             catch (Exception ex)
             {
@@ -164,6 +170,7 @@ namespace Auto
                     WinAPI.LeftClick(ComeBackButton, 2500);
                     com.Backup();
                     WinAPI.LeftClick(InitialStartButton, 2500);
+                    bCheckAuto = true;
                     com.SendMessage("Back up done. Continue autoOrange!");
                 }
             }
