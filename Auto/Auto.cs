@@ -21,6 +21,7 @@ namespace Auto
         //Sell autoSell;
         Scroll autoSroll;
         Ring autoRing;
+        Ring_new autoRing_new;
         Orange autoOrange;
         Point AppLocation;
         public bool IsStopped;
@@ -36,6 +37,7 @@ namespace Auto
             autoGift = new Gift(AppLocation, this);
             autoSroll = new Scroll(AppLocation, this);
             autoRing = new Ring(AppLocation, this);
+            autoRing_new = new Ring_new(AppLocation, this);
             autoOrange = new Orange(AppLocation, this);
 
         }
@@ -69,8 +71,8 @@ namespace Auto
             ClearLog();
             if (checkBoxRing.Checked)
             {
-                Log("bgrWorker_DoWork. AutoRing");
-                autoRing.AutoRing(tbRingCode.Text);
+                Log("bgrWorker_DoWork. AutoRing_new");
+                autoRing_new.AutoRing_new(10000);
                 Thread.Sleep(1000);
             }
             if (checkBoxScroll.Checked)
