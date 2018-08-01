@@ -94,6 +94,7 @@
     <Compile Include="Program.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
     <Compile Include="Ring.cs" />
+    <Compile Include="Ring_new.cs" />
     <Compile Include="SafeJade_v1.cs" />
     <Compile Include="SafeJade_v2.cs" />
     <Compile Include="Scroll.cs" />

@@ -150,7 +150,7 @@
             this.tbRingCode.Name = "tbRingCode";
             this.tbRingCode.Size = new System.Drawing.Size(93, 24);
             this.tbRingCode.TabIndex = 18;
-            this.tbRingCode.Text = "5,300,38000";
+            this.tbRingCode.Text = "Ring_new";
             // 
             // cbAudio
             // 

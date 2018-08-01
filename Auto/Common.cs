@@ -16,7 +16,7 @@ namespace Auto
         private Rectangle OKRect;
         //Backup
         private Point ServerButton, ConfirmButton, ConfirmAgainButton;
-        private Rectangle JadeBoundingBox, StartBoundingBox;
+        private Rectangle JadeBoundingBox, StartBoundingBox, BackupRect;
         private const int nMaxServerErrorTimes = 10;
         string finish, noti;
 
@@ -45,6 +45,8 @@ namespace Auto
             OKRect = new Rectangle(1125 + AppLocation.X, 571 + AppLocation.Y, 36, 16);
             OKButton = new Point(1143 + AppLocation.X, 579 + AppLocation.Y);
             Messenger = new Point(380, 958);
+
+            BackupRect = new Rectangle(405 + AppLocation.X, 891 + AppLocation.Y, 76, 23);
 
             finish = @"D:\8. Games\SecretKingdom\finish.wav";
             noti = @"D:\8. Games\SecretKingdom\noti.wav";
@@ -196,6 +198,26 @@ namespace Auto
             foreach (char ch in message)
                 SendKeys.SendWait(ch.ToString());
             SendKeys.SendWait("{ENTER}");
+        }
+
+        public bool CheckBackupMessage()
+        {
+            if (main.IsStopped) return false;
+            main.Log("CheckBackupMessage. Begin");
+            try
+            {
+                Bitmap BackupImage = WinAPI.GetRectImage(BackupRect);
+                bool bBackup = pi.CheckStringFromImage(BackupImage, "backup", 1000, false, false, true);
+                if (bBackup)
+                {
+                    return true;
+                }
+            }
+            catch (Exception ex)
+            {
+                main.Log("CheckBackupMessage. Ex: " + ex.Message.ToString());
+            }
+            return false;
         }
 
     }

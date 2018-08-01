@@ -70,7 +70,8 @@ namespace Auto
             {
                 if (CheckMerchant())
                 {
-                    //main.Log("AutoGift. Merchant not finish. ");
+                    if (i == 0)
+                        main.Log("AutoGift. Merchant not finish. ");
                     Thread.Sleep(1000);
                 }
                 else
@@ -156,9 +157,9 @@ namespace Auto
             main.Log("BuyMerchant. Begin");
             try
             {
-                WinAPI.LeftClick(PointToCheck, 1000);
-                WinAPI.LeftClick(PointToCheck, 1000);
-                WinAPI.LeftClick(GiftPos[nPos - 1], 1000);
+                WinAPI.LeftClick(PointToCheck, 1500);
+                WinAPI.LeftClick(PointToCheck, 1500);
+                WinAPI.LeftClick(GiftPos[nPos - 1], 1500);
                 WinAPI.LeftClick(PurchaseButton, 1500);
                 //for (int i = 0; i < 10; i++)
                 //{
@@ -171,6 +172,7 @@ namespace Auto
                 //        break;
                 //    }
                 //}
+                com.SendMessage("AutoGift. Buy Merchant at slot: " + nPos.ToString() + " done! waiting for command to save..........");
                 WinAPI.LeftClick(ConfirmButton, 1000);
                 WinAPI.LeftClick(XButton, 3000);
                 return true;
